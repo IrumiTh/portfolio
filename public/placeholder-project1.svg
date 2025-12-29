@@ -1,0 +1,7 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#0a0a0a"/>
+  <rect x="50" y="50" width="700" height="300" rx="20" fill="#1e3a8a" opacity="0.8"/>
+  <circle cx="200" cy="150" r="30" fill="#3b82f6"/>
+  <rect x="150" y="200" width="100" height="60" rx="10" fill="#3b82f6"/>
+  <text x="400" y="200" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="24">AI Task Manager</text>
+</svg>

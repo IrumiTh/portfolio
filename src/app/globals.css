@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #1e3a8a; /* midnight blue */
+  --secondary: #3b82f6; /* neon blue */
+  --accent: #1e40af; /* navy */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1e3a8a 100%);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af;
+}
+
+/* Horizontal scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Custom utility classes for consistent spacing */
+.section-center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-padding {
+  padding: 12px 24px;
+}
+
+.skills-margin-top {
+  margin-top: 2rem;
+}
+
+.hero-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-btn-margin {
+  margin-top: 2rem;
+}
+
+.section-margin-top {
+  margin-top: 2.5rem;
+}
+
+.card-padding {
+  padding: 1.5rem;
+}
+
+/* Skills section spacing */
+.skills-filter-margin {
+  margin-bottom: 3rem;
+}
+
+.skills-grid-gap {
+  gap: 1rem;
+}
+
+.skill-card-padding {
+  padding: 1rem;
+}
+
+.skill-dot-margin {
+  margin-bottom: 0.5rem;
+}
