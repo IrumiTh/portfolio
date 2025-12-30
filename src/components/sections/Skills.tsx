@@ -9,10 +9,10 @@ const skills = {
   languages: ['JavaScript', 'TypeScript', 'Java', 'Python', 'C#', 'PHP', 'SQL'],
   frontend: ['React', 'Angular', 'Redux Toolkit', 'Tailwind CSS', 'SCSS', 'MUI'],
   backend: ['Node.js', 'Express', 'Spring Boot', 'Spring WebFlux', '.NET', 'REST APIs', 'JWT', 'WebSocket'],
-  databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server'],
-  cloud: ['Azure', 'AWS', 'Firebase'],
-  devops: ['Docker', 'CI/CD', 'SonarQube', 'Git', 'GitHub', 'Azure DevOps'],
-  architecture: ['Microservices', 'MVC', 'Clean Architecture', 'Modular Design'],
+  'databases-orms': ['PostgreSQL', 'MySQL', 'MongoDB', 'SQL Server', 'Prisma ORM', 'Entity Framework Core'],
+  'cloud-devops': ['Azure Blob Storage', 'Docker', 'Firebase', 'Choreo', 'SonarQube', 'AWS'],
+  mobile: ['Flutter', 'Kotlin'],
+  architecture: ['Microservices', 'MVC', 'Clean Architecture', 'Modular Design', 'bff (Backend for Frontend)'],
   'ai-data': ['LangChain', 'HuggingFace Transformers', 'Pinecone', 'RAG Pipelines'],
   tools: ['Git', 'GitHub', 'Azure DevOps', 'Swagger / OpenAPI']
 };
@@ -22,9 +22,9 @@ const categories = [
   { key: 'frontend', label: 'Frontend', color: 'bg-blue-500' },
   { key: 'backend', label: 'Backend', color: 'bg-green-500' },
   { key: 'languages', label: 'Languages', color: 'bg-purple-500' },
-  { key: 'databases', label: 'Databases', color: 'bg-orange-500' },
-  { key: 'cloud', label: 'Cloud', color: 'bg-cyan-500' },
-  { key: 'devops', label: 'DevOps', color: 'bg-red-500' },
+  { key: 'databases-orms', label: 'Databases & ORMs', color: 'bg-orange-500' },
+  { key: 'cloud-devops', label: 'Cloud & DevOps', color: 'bg-cyan-500' },
+  { key: 'mobile', label: 'Mobile Development', color: 'bg-teal-500' },
   { key: 'architecture', label: 'Architecture', color: 'bg-indigo-500' },
   { key: 'ai-data', label: 'AI & Data', color: 'bg-pink-500' },
   { key: 'tools', label: 'Tools', color: 'bg-yellow-500' }
